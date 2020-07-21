@@ -1,0 +1,39 @@
+body {
+    font-family: system-ui;
+    background: #444;
+}
+
+.popupContainer {
+    margin: 10px;
+}
+
+.omniboxContainer {
+    margin: 4px;
+    padding: 10px
+    color: black;
+}
+
+input[type=text] {
+}
+
+.inputButton {
+    margin: 6px;
+    background-color: #666;
+    color: white;
+    font-size: 12px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b0b0b0;
+    color: white;
+}
+
+#titleCard {
+    font-size: 14px;
+    color: white;
+}
