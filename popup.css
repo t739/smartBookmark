@@ -3,17 +3,20 @@ body {
     background: #444;
 }
 
+input[type=text] {
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+}
+
 .popupContainer {
     margin: 10px;
 }
 
 .omniboxContainer {
     margin: 4px;
-    padding: 10px
-    color: black;
-}
-
-input[type=text] {
+    padding: 10px color: black;
+    text-align: center;
 }
 
 .inputButton {
@@ -21,7 +24,7 @@ input[type=text] {
     background-color: #666;
     color: white;
     font-size: 12px;
-    padding: 6px 10px;
+    padding: 10px 18px;
     border: none;
     border-radius: 3px;
     text-align: center;
@@ -31,6 +34,13 @@ input[type=text] {
 button:hover {
     background-color: #b0b0b0;
     color: white;
+}
+
+.resultsContainer {
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 5px;
+    margin: 5px;
 }
 
 #titleCard {

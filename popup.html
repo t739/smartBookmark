@@ -8,15 +8,29 @@
 
 <body>
     <div class="popupContainer">
+
         <div id="titleCard">
             <h4>Enter Search term</h4>
         </div>
+
         <div class="omniboxContainer">
             <input type="text" id="omnibox"></br>
         </div>
+
+        <div class="resultsContainer">
+            <user-card title="Best Bookmark" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+                <div slot="notes">something something</div>
+            </user-card>
+            <user-card title="2nd Best bookmark" avatar="https://randomuser.me/api/portraits/women/1.jpg">
+                <div slot="notes">yeah I remember why</div>
+            </user-card>
+        </div>
+
         <button class="inputButton" id="addBookmarks">Add New</button>
         <button class="inputButton" id="getAllBookmarks">See All</button>
+
     </div>
+    <script src="./searchcard.js" type='text/javascript'></script>
 </body>
 
 </html>
