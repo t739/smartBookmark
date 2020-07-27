@@ -1,6 +1,6 @@
 body {
     font-family: system-ui;
-    background: #444;
+    background: #333;
 }
 
 input[type=text] {
@@ -19,7 +19,7 @@ input[type=text] {
     text-align: center;
 }
 
-.inputButton {
+.addBookmarks, .getAllBookmarks {
     margin: 6px;
     background-color: #666;
     color: white;
@@ -28,11 +28,17 @@ input[type=text] {
     border: none;
     border-radius: 3px;
     text-align: center;
+    width: 100px;
     cursor: pointer;
 }
 
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 button:hover {
-    background-color: #b0b0b0;
+    background-color: #777;
     color: white;
 }
 
