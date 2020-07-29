@@ -15,7 +15,8 @@ input[type=text] {
 
 .omniboxContainer {
     margin: 4px;
-    padding: 10px color: black;
+    padding: 10px;
+     color: black;
     text-align: center;
 }
 

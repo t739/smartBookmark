@@ -1,0 +1,105 @@
+<html>
+    <head>
+        
+        <script src="./jquery-3.4.1.js"></script>
+        <script src="./jquery-ui.js" ></script>
+        <script src="./bookmarkManager.js"></script>
+        <style>
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+            }
+        
+            #leftNav {
+                text-align: center;
+            }
+        
+            #tagsContent {
+                display: grid;
+                grid-row-gap: 1em;
+                justify-content: center;
+        
+                text-align: center;
+                grid-auto-columns: minmax(80px, auto);
+            }
+        
+            #tagsContent>div {
+                background-color: lightgray;
+                border: 1px solid black;
+                border-radius: 3px;
+                padding: 2px;
+                display: flex;
+            }
+        
+            #mainContent {
+               
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-auto-rows: minmax(100px,auto);
+                grid-gap: 1em;
+                justify-content: stretch;
+            }
+            #mainContent>div {
+                background-color: lightgray;
+                border: 1px solid black;
+                border-radius: 3px;
+                padding: 2px;
+            }
+            img{
+                width: 100%;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="leftNav">
+                <h1>TAGS</h1>
+                <input id="searchTags" placeholder="Find a tag"> 
+                <div id ="tagsContent">
+                    <div> a/b testing   </div>
+                    <div>a/b testing  </div>
+                    <div>a/b testing  </div>
+                </div>
+                
+            </div>
+            <div id="mainContent">
+                <!-- <div>
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" >
+                    <h3>Best Bookmark</h3>
+                    <p>something something something something something
+                         something something somethingsomething something
+                          something somethingsomething something something
+                          somethingsomething something something something
+                         </p>
+                    <div>a/b testing</div>
+                </div>
+                <div>
+                    <div><img src="https://randomuser.me/api/portraits/men/1.jpg" ></div>
+                    <h3>Best Bookmark</h3>
+                    <p>something something</p>
+                    <div>a/b testing</div>
+                </div>
+                <div>
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" >
+                    <h3>Best Bookmark</h3>
+                    <p>something something</p>
+                    <div>a/b testing</div>
+                </div>
+                <div>
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" >
+                    <h3>Best Bookmark</h3>
+                    <p>something something</p>
+                    <div>a/b testing</div>
+                </div> -->
+                <div>
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" >
+                    <h3>Best Bookmark</h3>
+                    <p>something something</p>
+                    <div>a/b testing</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

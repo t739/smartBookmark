@@ -86,7 +86,7 @@ function saveBookmark() {
 function openBookmark() {
     console.log("open button");
     chrome.tabs.create({
-        "url": "https://callstack.com/blog/say-goodbye-to-old-fashioned-forks-thanks-to-the-patch-package/"
+        "url": "./bookmarkManager.html"
     });
 }
 
