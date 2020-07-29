@@ -83,8 +83,13 @@ function saveBookmark() {
     goToSearchView();
 }
 
+function onBookmarkClick(url) {
+    chrome.tabs.create({
+        "url": url
+    });
+}
+
 function openBookmark() {
-    console.log("open button");
     chrome.tabs.create({
         "url": "./bookmarkManager.html"
     });
@@ -159,11 +164,9 @@ function getBookmarksForSearch(query) {
 }
 
 function showResultForBookmark(bookmark) {
-    let img_url = "https://s2.googleusercontent.com/s2/favicons?domain_url=" + bookmark['url'];
-
-    let bookmark_card = document.createElement('user-card');
+    let bookmark_card = new UserCard(onBookmarkClick);
     bookmark_card.title = bookmark['title'];
-    bookmark_card.avatar = img_url;
+    bookmark_card.avatar = bookmark['url'];
 
     let bookmark_slot = document.createElement("div");
     bookmark_slot.slot = "notes";
